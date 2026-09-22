@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NoFluff Marketing — Marketing that earns the next call</title>
+<meta name="description" content="Practical customer-acquisition systems for North Dallas service businesses." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{--ink:#0c0b09;--paper:#f4efe6;--cream:#faf7f1;--muted:#6d675c;--line:rgba(12,11,9,.12);--line-light:rgba(250,247,241,.14);--copper:#b65a28;--copper-2:#d06a2e;--white:#faf7f1;--max:1240px;--serif:"Instrument Serif",serif;--sans:"Sora",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:var(--sans);background:var(--ink);color:var(--ink);line-height:1.55}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}
+.wrap{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:500}
+.nav{position:sticky;top:0;z-index:50;background:rgba(12,11,9,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line-light)}
+.nav-inner{width:min(var(--max),calc(100% - 32px));margin:auto;display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--white)}
+.mark{min-width:42px;height:34px;padding:0 8px;border:1px solid var(--copper);display:grid;place-items:center;font-size:11px;letter-spacing:.08em;font-weight:600;color:var(--copper-2)}
+.brand-text{display:flex;flex-direction:column;line-height:1.1}
+.brand-text strong{font-size:13px}.brand-text span{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#b8b0a4}
+.nav-links{display:flex;gap:22px;color:#cfc8bc;font-size:13px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;font-size:13px;font-weight:500;border:1px solid transparent;cursor:pointer}
+.btn-primary{background:var(--copper);color:#fff}.btn-ghost{background:transparent;color:var(--white);border-color:var(--line-light)}.btn-dark{background:var(--ink);color:#fff}
+.hero{color:var(--white);min-height:92vh;display:grid;grid-template-columns:1.05fr .95fr}
+.hero-copy{padding:72px 48px 64px clamp(24px,6vw,80px);display:flex;flex-direction:column;justify-content:center}
+.hero-copy .eyebrow{color:var(--copper-2);margin-bottom:22px}
+.hero h1{font-family:var(--serif);font-size:clamp(52px,7vw,92px);line-height:.92;font-weight:400;max-width:10ch}
+.hero h1 em{font-style:italic;color:var(--copper-2)}
+.one-liner{margin-top:22px;font-size:18px;color:#ece6da;max-width:34ch}
+.hero .lead{margin-top:16px;color:#b8b0a4;max-width:42ch;font-size:15px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.hero-note{margin-top:18px;color:#8c8579;font-size:12px}
+.hero-visual{position:relative;min-height:520px}
+.hero-visual img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.hero-cap{position:absolute;left:24px;bottom:24px;z-index:2;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+.towns-bar{border-top:1px solid var(--line-light);padding:16px 0;color:#9c9589;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.towns-bar .wrap{display:flex;flex-wrap:wrap;gap:8px 22px}
+.panel{padding:96px 0}.panel-cream{background:var(--paper)}.panel-ink{background:var(--ink);color:var(--white)}
+.panel-head{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:48px;align-items:end}
+.kicker{color:var(--copper);margin-bottom:12px}
+.panel h2{font-family:var(--serif);font-size:clamp(40px,6vw,68px);line-height:.95}
+.panel h2 .mute{color:#8a8378}.lede{color:var(--muted);font-size:16px;max-width:42ch}
+.moments{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.moment{padding:28px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:240px;display:flex;flex-direction:column}
+.moment .num{color:var(--copper);font-size:12px}.moment h3{font-family:var(--serif);font-size:30px;margin:28px 0 14px}.moment p{color:#5c564c;font-size:14px;flex:1}
+.shelf{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{padding:26px 24px;min-height:250px;display:flex;flex-direction:column}
+.card.featured{background:#1a1814;color:#fff;border:1px solid #2a2620}
+.card h3{font-family:var(--serif);font-size:28px;margin:8px 0 10px}.card p,.card ul{color:#cfc8bc;font-size:14px}.card ul{margin-top:10px;padding-left:16px}.price{margin-top:18px;color:var(--copper-2)}
+.tiers{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;margin-top:48px}.tier-visual img{width:100%;height:360px;object-fit:cover}
+.tier{border:1px solid var(--line-light);padding:20px 22px;display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-top:10px}
+.tier strong{font-family:var(--serif);font-size:26px}.tier em{font-style:normal;color:var(--copper-2);font-size:18px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+.step{padding:28px 22px 8px 0}.step+.step{padding-left:22px;border-left:1px solid var(--line)}
+.step .num{color:var(--copper);font-size:12px}.step h3{font-family:var(--serif);font-size:28px;margin:16px 0 10px}.step p{color:#5c564c;font-size:14px}
+.proof-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.quote,.ba{background:#1a1814;border:1px dashed #3a352e;padding:24px;min-height:200px}
+.badge{display:inline-block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--copper-2);border:1px solid rgba(208,106,46,.4);padding:4px 8px;margin-bottom:16px}
+.quote p{font-family:var(--serif);font-size:24px;color:#ece6da}.quote cite{display:block;margin-top:18px;color:#8c8579}
+.price-table{width:100%;border-collapse:collapse}.price-table th,.price-table td{text-align:left;padding:18px 12px;border-bottom:1px solid var(--line)}.price-table .amt{font-family:var(--serif);font-size:28px}.price-table td:last-child{text-align:right}
+.audit{background:var(--copper);color:#fff;padding:64px 0}.audit .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}.audit h2{font-family:var(--serif);font-size:clamp(36px,5vw,56px);max-width:16ch}.audit .btn{background:var(--ink);color:#fff}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}.faq summary{cursor:pointer;font-size:18px;font-weight:500}.faq details p{margin-top:10px;color:#5c564c}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px}
+.contact a.big{display:block;font-family:var(--serif);font-size:clamp(28px,4vw,40px);margin:8px 0 18px}
+form{display:grid;gap:12px}label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#8a8379}
+input,textarea,select{width:100%;background:#fff;border:1px solid var(--line);padding:12px 14px}textarea{min-height:110px}
+footer{border-top:1px solid var(--line-light);color:#9c9589;font-size:13px;padding:28px 0 40px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.industries{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}.industries span{border:1px solid var(--line);padding:6px 10px;font-size:12px}
+.mobile-cta{display:none}
+@media(max-width:960px){.hero,.panel-head,.shelf,.moments,.steps,.proof-grid,.tiers,.contact-grid{grid-template-columns:1fr}.hero-copy{padding:48px 22px}.hero-visual{min-height:320px}.hero-visual img{position:relative;height:320px}.nav-links{display:none}.step+.step{padding-left:0;border-left:0;border-top:1px solid var(--line);padding-top:22px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="nav-inner">
+<a class="brand" href="#top"><span class="mark">NFM</span><span class="brand-text"><strong>NoFluff</strong><span>Marketing</span></span></a>
+<nav class="nav-links"><a href="#framework">The system</a><a href="#products">Shelf</a><a href="#pricing">Pricing</a><a href="#audit">Audit</a><a href="#contact">Contact</a></nav>
+<div class="nav-cta"><a class="btn btn-ghost" href="https://audit.nofluffmarketing.io">Free audit</a><a class="btn btn-primary" href="#contact">Free website preview</a></div>
+</div></header>
+<section class="hero" id="top">
+<div class="hero-copy">
+<p class="eyebrow">North Texas · HVAC, roofing, plumbing, dental, local trades</p>
+<h1>Marketing that earns the <em>next call.</em></h1>
+<p class="one-liner">Turn local interest into a real conversation — not a missed voicemail.</p>
+<p class="lead">We build the front door and the follow-through for owners who already do the job well. Found. Trusted. Answered. Booked.</p>
+<div class="hero-actions"><a class="btn btn-primary" href="#contact">Get a free website preview</a><a class="btn btn-ghost" href="https://audit.nofluffmarketing.io">Get a free audit</a></div>
+<p class="hero-note">No purchase required · Built around your trade and your towns</p>
+</div>
+<div class="hero-visual"><img src="https://images.unsplash.com/photo-1600585154340-0ef3c08ea09e?auto=format&fit=crop&w=1600&q=80" alt="North Dallas home" /><p class="hero-cap">Celina · Prosper · Frisco · McKinney</p></div>
+</section>
+<div class="towns-bar"><div class="wrap"><span>Celina</span><span>Prosper</span><span>Frisco</span><span>McKinney</span><span>Allen</span><span>Anna</span><span>Melissa</span><span>Aubrey</span><span>Gunter</span><span>Little Elm</span><span>The Colony</span><span>Plano</span></div></div>
+<section class="panel panel-cream" id="framework"><div class="wrap">
+<div class="panel-head"><div><p class="eyebrow kicker">The framework</p><h2>Four moments.<br>One customer.</h2></div><p class="lede">Great marketing does not end at a click. It gets someone from finding your business to talking to you.</p></div>
+<div class="moments">
+<article class="moment"><span class="num">01</span><h3>Get found</h3><p>Show up where North Dallas homeowners already look when something breaks.</p></article>
+<article class="moment"><span class="num">02</span><h3>Earn trust</h3><p>A site that looks like the work you do. Reviews from real jobs, not borrowed ones.</p></article>
+<article class="moment"><span class="num">03</span><h3>Start the conversation</h3><p>An obvious next step that actually gets answered.</p></article>
+<article class="moment"><span class="num">04</span><h3>Be there</h3><p>Every inquiry has an owner and a next step. Nothing sits overnight.</p></article>
+</div>
+<div class="industries"><span>HVAC</span><span>Roofing &amp; windows</span><span>Plumbing &amp; electrical</span><span>Dental</span><span>Local trades</span></div>
+</div></section>
+<section class="panel panel-ink" id="products"><div class="wrap">
+<div class="panel-head"><div><p class="eyebrow kicker">The product shelf</p><h2>Everything we <span class="mute">build and sell.</span></h2></div><p class="lede" style="color:#b8b0a4">Sold on outcome. Not on software.</p></div>
+<div class="shelf">
+<article class="card featured"><span class="eyebrow">01</span><h3>CallShield</h3><p>Never miss another call.</p><ul><li>Answers with your rules</li><li>Instant text-back</li><li>Clean call summary</li></ul></article>
+<article class="card featured"><span class="eyebrow">02</span><h3>Review Engine</h3><p>Turn happy customers into 5-star proof.</p><ul><li>Automatic ask after the job</li><li>Reviews on your site</li><li>Alert on a bad review</li></ul></article>
+<article class="card featured"><span class="eyebrow">03</span><h3>Lead Machine</h3><p>Every lead captured.</p><ul><li>One pipeline</li><li>Follow-up starts immediately</li><li>See where every lead stands</li></ul></article>
+<article class="card featured"><span class="eyebrow">04</span><h3>Booking</h3><p>Fill the calendar.</p><ul><li>Online booking</li><li>Reminders sent for you</li><li>Reschedule without phone tag</li></ul></article>
+<article class="card featured"><span class="eyebrow">05</span><h3>Nurture Autopilot</h3><p>Old leads become new jobs.</p><ul><li>Text and email follow-up</li><li>Win-back</li><li>Seasonal check-ins</li></ul></article>
+<article class="card featured"><span class="eyebrow">06</span><h3>Websites</h3><p>A front door that matches the work.</p><ul><li>Custom mobile-first site</li><li>Hosting and small updates</li><li>Clear next step</li></ul><p class="price">$297 to build · $97 / mo</p></article>
+</div>
+<div class="tiers"><div class="tier-visual"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80" alt="North Dallas evening" /></div>
+<div><p class="eyebrow kicker">Run it yourself</p><h2 style="font-size:clamp(32px,5vw,48px);margin:8px 0 18px">Your leads. Your data.</h2>
+<div class="tier"><strong>Operator</strong><span>Core pipeline</span><em>$197 / mo</em></div>
+<div class="tier"><strong>Command</strong><span>Calls, reviews, follow-up</span><em>$397 / mo</em></div>
+<div class="tier"><strong>Command Pro</strong><span>Full stack + priority</span><em>$597 / mo</em></div>
+</div></div>
+</div></section>
+<section class="panel panel-cream" id="work"><div class="wrap">
+<div class="panel-head"><div><p class="eyebrow kicker">How we work</p><h2>Less presentation.<br>More progress.</h2></div><p class="lede">Find the leak. Fix that first. Connect the rest.</p></div>
+<div class="steps">
+<article class="step"><span class="num">01</span><h3>Find the gap</h3><p>Weak site. Thin reviews. Missed calls.</p></article>
+<article class="step"><span class="num">02</span><h3>See the fix</h3><p>A working preview before you pay.</p></article>
+<article class="step"><span class="num">03</span><h3>Close the loop</h3><p>Site, calls, and follow-up in one path.</p></article>
+<article class="step"><span class="num">04</span><h3>Watch what counts</h3><p>Calls. Conversations. Booked jobs.</p></article>
+</div></div></section>
+<section class="panel panel-ink" id="proof"><div class="wrap">
+<div class="panel-head"><div><p class="eyebrow kicker">Proof</p><h2>Results go here.<br><span class="mute">Not fiction.</span></h2></div><p class="lede" style="color:#b8b0a4">No invented testimonials.</p></div>
+<div class="proof-grid">
+<article class="quote"><span class="badge">Placeholder</span><p>“Quote from a Celina or Frisco owner after 90 days.”</p><cite>Awaiting first operator</cite></article>
+<article class="ba"><span class="badge">Before / after</span><h3>Missed-call recovery</h3><p>Slot reserved for a real shop.</p></article>
+<article class="ba"><span class="badge">Before / after</span><h3>Review velocity</h3><p>Slot reserved.</p></article>
+</div></div></section>
+<section class="panel panel-cream" id="pricing"><div class="wrap">
+<div class="panel-head"><div><p class="eyebrow kicker">Pricing</p><h2>Plain numbers.</h2></div><p class="lede">Paid work starts after you see the plan.</p></div>
+<table class="price-table"><thead><tr><th>Offer</th><th>What you get</th><th>Price</th></tr></thead><tbody>
+<tr><td>Website preview</td><td>A better front door to judge</td><td><span class="amt">Free</span></td></tr>
+<tr><td>Business audit</td><td>Where customers get lost</td><td><span class="amt">Free</span></td></tr>
+<tr><td>Managed website</td><td>Build, hosting, updates</td><td><span class="amt">$297</span> + $97/mo</td></tr>
+<tr><td>Operator</td><td>Core pipeline</td><td><span class="amt">$197</span>/mo</td></tr>
+<tr><td>Command</td><td>Calls, reviews, follow-up</td><td><span class="amt">$397</span>/mo</td></tr>
+<tr><td>Command Pro</td><td>Full stack + priority</td><td><span class="amt">$597</span>/mo</td></tr>
+</tbody></table></div></section>
+<section class="audit" id="audit"><div class="wrap"><h2>See what’s leaking before you buy anything.</h2><a class="btn" href="https://audit.nofluffmarketing.io">Start the free audit →</a></div></section>
+<section class="panel panel-cream" id="contact"><div class="wrap contact-grid">
+<div><p class="eyebrow kicker">Contact</p><h2>Tell us the business.</h2>
+<a class="big" href="mailto:info@nofluffmarketing.io">info@nofluffmarketing.io</a>
+<a class="big" href="tel:19453708656">945-370-8656</a>
+<p class="lede">North Dallas. We answer.</p></div>
+<form action="https://formsubmit.co/info@nofluffmarketing.io" method="POST">
+<input type="hidden" name="_subject" value="NoFluff preview" />
+<label>Name</label><input name="name" required />
+<label>Business + town</label><input name="business" placeholder="Acme HVAC — Frisco" required />
+<label>What would help most?</label>
+<select name="need"><option>Free website preview</option><option>Free audit</option><option>CallShield</option><option>Reviews</option><option>A monthly plan</option></select>
+<label>Anything else</label><textarea name="message"></textarea>
+<button class="btn btn-dark" type="submit">Send the request</button>
+</form></div></section>
+<footer class="panel-ink"><div class="wrap"><span>NoFluff Marketing · North Dallas</span><span>info@nofluffmarketing.io · 945-370-8656</span></div></footer>
+</body></html>
